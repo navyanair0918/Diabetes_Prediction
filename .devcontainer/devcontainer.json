@@ -1,0 +1,13 @@
+{
+  "name": "DiaLens Python 3.12",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "postCreateCommand": "python -m pip install -r requirements.txt && python train_model.py",
+  "forwardPorts": [5000],
+  "portsAttributes": {
+    "5000": {
+      "label": "DiaLens website",
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
+    }
+  }
+}
