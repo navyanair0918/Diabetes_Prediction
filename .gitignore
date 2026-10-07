@@ -4,3 +4,5 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .dist/
+.presentation_build/
+presentation_output/
